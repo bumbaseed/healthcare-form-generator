@@ -1,0 +1,137 @@
+.field-row {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.6rem 0;
+}
+
+.field-row:last-child {
+    border-bottom: none;
+}
+
+.field-row-main {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 56px 80px;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.field-row--header .field-row-main {
+    font-weight: 600;
+    font-size: 0.82rem;
+    color: var(--text-light);
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.field-row--header .field-row-main span {
+    padding: 0 0.25rem;
+}
+
+.section-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0.75rem;
+    background: #eff6ff;
+    border: 2px dashed #93c5fd;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+}
+
+.section-row-icon {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.section-label-input {
+    flex: 1;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-color: #93c5fd !important;
+    background: white;
+}
+
+/* Layout helpers used only by the builder admin page. */
+.builder-card {
+    padding: 1.5rem;
+}
+
+.builder-card--meta {
+    margin-bottom: 1.5rem;
+}
+
+.builder-card-title {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.builder-card-title--first {
+    margin-top: 0;
+}
+
+.builder-fields-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.builder-fields-header-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.builder-required-marker {
+    color: var(--danger-color);
+}
+
+.builder-optional-marker {
+    color: var(--text-muted);
+    font-weight: normal;
+}
+
+.builder-required-cell {
+    text-align: center;
+}
+
+.builder-checkbox-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.builder-remove-btn--hidden {
+    visibility: hidden;
+}
+
+.builder-no-fields-msg {
+    display: none;
+    color: var(--text-muted);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.builder-submit-row {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.builder-error-list ul { margin: 0.5rem 0 0 1.2rem; }
+
+/* Lock marker row */
+.section-end-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0.75rem;
+    background: #fef9c3;
+    border: 1px dashed #fbbf24;
+    border-radius: 4px;
+    margin: 0.2rem 0;
+    font-size: 0.75rem;
+    color: #92400e;
+    font-style: italic;
+}

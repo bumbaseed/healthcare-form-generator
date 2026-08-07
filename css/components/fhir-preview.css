@@ -1,0 +1,29 @@
+.fhir-export-desc {
+    color: var(--text-muted);
+    margin: 0.25rem 0 0;
+}
+
+.fhir-export-note {
+    color: var(--text-muted);
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+}
+
+.fhir-export-actions {
+    margin: 0 0 1rem;
+}
+
+.fhir-preview {
+    background: var(--bg-alt, #f7f7f9);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    color: var(--text-primary);
+    max-height: 70vh;
+    overflow: auto;
+    white-space: pre;
+    margin: 0;
+}

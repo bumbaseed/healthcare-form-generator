@@ -1,0 +1,18 @@
+.footer {
+    background-color: var(--bg-white);
+    border-top: 1px solid var(--border-color);
+    padding: var(--spacing-lg);
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.footer-note {
+    font-size: var(--font-size-sm);
+    margin-top: var(--spacing-xs);
+}

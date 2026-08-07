@@ -1,0 +1,8 @@
+/config/database.local.php
+/logs/
+*.log
+.DS_Store
+/database/schema.sql
+/config/
+/database/seed-admin.php
+/css/main.css

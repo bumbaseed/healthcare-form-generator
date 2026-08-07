@@ -1,0 +1,104 @@
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.required {
+    color: var(--danger-color);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+select,
+textarea,
+.form-control {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: var(--font-size-base);
+    font-family: var(--font-family);
+    transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-help {
+    font-size: var(--font-size-sm);
+    color: var(--text-light);
+    margin-top: var(--spacing-xs);
+}
+
+.form-error {
+    color: var(--danger-color);
+    font-size: var(--font-size-sm);
+    margin-top: var(--spacing-xs);
+}
+
+/* Visual hint that the field has a validation error. The aria-invalid attribute on the input is what assistive tech actually reads. The colour change is just for sighted users so colour alone isn't the only signal. */
+.form-group--error label { color: var(--danger-color); }
+.form-group--error input,
+.form-group--error select,
+.form-group--error textarea {
+    border-color: var(--danger-color);
+}
+.form-group--error input:focus,
+.form-group--error select:focus,
+.form-group--error textarea:focus {
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.form-field-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.form-field-grid--sectioned {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1.5rem;
+}
+
+.form-section {
+    margin-bottom: 0.25rem;
+}
+
+.form-section-heading {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-lighter);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.4rem;
+    margin: 1.75rem 0 1rem;
+}
+
+.form-section-heading:first-child {
+    margin-top: 0;
+}
+
+@media (max-width: 600px) {
+    .form-field-grid--sectioned { grid-template-columns: 1fr; }
+}

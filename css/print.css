@@ -1,0 +1,53 @@
+/**
+ * Print layout for generated forms. Produces a clean record-style printout:
+ * strips navigation/footer/action bar and renders form inputs as static text
+ * so a form completed on screen prints the same as a formal record.
+ */
+@media print {
+    @page { margin: 15mm; }
+
+    body { background: #fff; color: #000; font-size: 11pt; }
+
+    .navbar,
+    .site-footer,
+    .form-footer,
+    .flash-message,
+    .error-list,
+    .nav-toggle {
+        display: none !important;
+    }
+
+    .form-page { padding: 0; margin: 0; }
+    .form-body { border: none; padding: 0; box-shadow: none; }
+
+    .patient-banner,
+    .form-meta-header {
+        border: 1px solid #999;
+        box-shadow: none;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .form-group { break-inside: avoid; page-break-inside: avoid; }
+
+    .form-control,
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        border: none;
+        border-bottom: 1px solid #000;
+        background: transparent;
+        padding: 0 0 2px 0;
+        box-shadow: none;
+        color: #000;
+    }
+
+    button, .btn { display: none !important; }
+
+    a { color: #000; text-decoration: none; }
+}

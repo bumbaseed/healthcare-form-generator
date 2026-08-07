@@ -1,0 +1,62 @@
+/**
+ * Login page (no navbar/footer): centred card on a gradient backdrop.
+ */
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: var(--spacing-lg);
+}
+
+.login-container {
+    background: white;
+    padding: var(--spacing-2xl);
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.login-header .brand-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 14px;
+    margin-bottom: var(--spacing-md);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.35);
+}
+
+.login-header .brand-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.login-header h1 {
+    color: var(--text-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.login-header p {
+    color: var(--text-light);
+    margin: 0;
+}
+
+.error-message {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: var(--spacing-md);
+    border-radius: 6px;
+    margin-bottom: var(--spacing-lg);
+    border-left: 4px solid var(--danger-color);
+}
