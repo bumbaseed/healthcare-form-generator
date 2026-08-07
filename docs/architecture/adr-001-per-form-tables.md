@@ -55,7 +55,7 @@ Each generated table also gets:
 **Negative**
 
 - **The application issues DDL at runtime.** It needs `CREATE TABLE` rights on
-  the `form_data` schema — a materially larger privilege than a typical
+  the `form_data` schema, a materially larger privilege than a typical
   application role holds, and the main security cost of this decision.
 - **Identifiers cannot be parameterised.** SQL placeholders bind values, not
   table or column names, so generated identifiers are interpolated into the
