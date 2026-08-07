@@ -34,7 +34,7 @@ resulting number as `form_version` on the definition row.
 There is no overwrite path. A name that is already taken always yields a new
 version with its own table.
 
-The version is not an internal detail — it propagates to every artefact that
+The version is not an internal detail, it propagates to every artefact that
 identifies the form:
 
 | Artefact                 | Form of the identifier           |
@@ -53,7 +53,7 @@ identifies the form:
   later authoring action.
 - **A FHIR `QuestionnaireResponse` names the exact form version it answers**, in
   the `questionnaire` element. A consumer reading an exported submission years
-  later can tell precisely which question set produced it — which is the
+  later can tell precisely which question set produced it, which is the
   interoperability argument for versioning, not just the safety one.
 - **No destructive path exists in the authoring flow.** Creating a form cannot
   damage existing data, so the operation needs no confirmation step and no
