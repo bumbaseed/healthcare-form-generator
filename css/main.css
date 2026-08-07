@@ -1,0 +1,42 @@
+/**
+ * Healthcare Form Generator - Main Stylesheet
+ *
+ * Entry point only. All rules live in topic-specific files below. The import
+ * order follows ITCSS logic: low-specificity globals first, then layout,
+ * then components, then single-purpose utilities, then print overrides.
+ *
+ * Add new component CSS in components/ and import it here. Avoid editing
+ * this file except to add/remove @import lines.
+ */
+
+/* Base: tokens, reset, element defaults */
+@import "base/variables.css";
+@import "base/reset.css";
+@import "base/typography.css";
+@import "base/accessibility.css";
+
+/* Layout: structural shells used on every page */
+@import "layout/page.css";
+@import "layout/navigation.css";
+@import "layout/footer.css";
+
+/* Components: reusable UI blocks */
+@import "components/button.css";
+@import "components/badge.css";
+@import "components/card.css";
+@import "components/flash.css";
+@import "components/table.css";
+@import "components/icon.css";
+@import "components/empty-state.css";
+@import "components/dashboard.css";
+@import "components/form-controls.css";
+@import "components/form-builder.css";
+@import "components/form-page.css";
+@import "components/submission.css";
+@import "components/fhir-preview.css";
+
+/* Utilities: single-purpose helpers  */
+@import "utilities/utilities.css";
+
+/* Print overrides , must be last so @media print wins over components */
+@import "print.css";

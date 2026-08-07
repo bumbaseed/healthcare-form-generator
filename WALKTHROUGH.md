@@ -4,7 +4,7 @@ This walkthrough takes you through the system end-to-end: logging in, setting pa
 
 ## 1. Login
 
-Open <http://localhost:8000>. The request should be redirected to `/login.php` because no session exists.
+The request should be redirected to `/login.php` because no session exists.
 
 Log in as the admin user with the credentials `admin` / `admin123`.
 
